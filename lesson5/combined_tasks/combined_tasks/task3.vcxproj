@@ -139,9 +139,11 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="counter.cpp" />
     <ClCompile Include="EquilateralTriangle.cpp" />
     <ClCompile Include="Figure.cpp" />
     <ClCompile Include="IsoscelesTriangle.cpp" />
+    <ClCompile Include="math_functions.cpp" />
     <ClCompile Include="Parallelogram.cpp" />
     <ClCompile Include="Quadrilateral.cpp" />
     <ClCompile Include="Rectangle.cpp" />
@@ -149,18 +151,22 @@
     <ClCompile Include="RightTriangle.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="tasks.cpp" />
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="counter.h" />
     <ClInclude Include="EquilateralTriangle.h" />
     <ClInclude Include="Figure.h" />
     <ClInclude Include="IsoscelesTriangle.h" />
+    <ClInclude Include="math_functions.h" />
     <ClInclude Include="Parallelogram.h" />
     <ClInclude Include="Quadrilateral.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Rhombus.h" />
     <ClInclude Include="RightTriangle.h" />
     <ClInclude Include="Square.h" />
+    <ClInclude Include="tasks.h" />
     <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
