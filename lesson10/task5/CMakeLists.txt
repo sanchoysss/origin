@@ -5,7 +5,7 @@ if (POLICY CMP0141)
   set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
 endif()
 
-project ("task4")
+project ("task5")
 
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
@@ -31,12 +31,12 @@ add_library(FiguresLibrary SHARED
     Rhombus.cpp
     Rhombus.h
 )
-add_executable (task4 "main.cpp" "main.h")
+add_executable (task5 "main.cpp" "main.h")
 
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET task4 PROPERTY CXX_STANDARD 20)
+  set_property(TARGET task5 PROPERTY CXX_STANDARD 20)
 endif()
 
 # TODO: Добавьте тесты и целевые объекты, если это необходимо.
-target_link_libraries(task4 PRIVATE FiguresLibrary)
+target_link_libraries(task5 PRIVATE FiguresLibrary)
