@@ -3,13 +3,7 @@
 
 #include <string>
 
-#ifdef DYNAMICLIBRARY_EXPORTS
-#define FIGURES_API __declspec(dllexport)
-#else
-#define FIGURES_API __declspec(dllimport)
-#endif 
-
-class FIGURES_API Figure {
+class  Figure {
 protected:
     std::string name;
     Figure(const std::string& figure_name);

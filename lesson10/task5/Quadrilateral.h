@@ -4,13 +4,8 @@
 #include "Figure.h"
 #include <string>
 
-#ifdef DYNAMICLIBRARY_EXPORTS
-#define FIGURES_API __declspec(dllexport)
-#else
-#define FIGURES_API __declspec(dllimport)
-#endif 
 
-class FIGURES_API Quadrilateral : public Figure {
+class Quadrilateral : public Figure {
 protected:
     int a, b, c, d;
     int A, B, C, D;

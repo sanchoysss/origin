@@ -4,13 +4,9 @@
 #include "Figure.h"
 #include <string>
 
-#ifdef DYNAMICLIBRARY_EXPORTS
-#define FIGURES_API __declspec(dllexport)
-#else
-#define FIGURES_API __declspec(dllimport)
-#endif 
 
-class FIGURES_API Triangle : public Figure {
+
+class Triangle : public Figure {
 protected:
     int a, b, c;
     int A, B, C;
