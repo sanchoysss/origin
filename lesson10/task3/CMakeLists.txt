@@ -7,6 +7,8 @@ endif()
 
 project ("task3")
 
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+
 add_library(LibraryDynamic SHARED "LibraryDynamic.h" "LibraryDynamic.cpp")
  
 add_executable (task3 "main.cpp")
